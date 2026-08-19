@@ -952,3 +952,172 @@ footer {
     }
 
 }
+
+/* ================= CUSTOM ARROWS ================= */
+
+.arrow {
+    display: inline-block;
+    position: relative;
+
+    width: 14px;
+    height: 14px;
+
+    flex-shrink: 0;
+
+    color: currentColor;
+}
+
+
+/* ================= ÇAPRAZ OK ================= */
+
+.arrow-up-right::before {
+    content: "";
+
+    position: absolute;
+
+    width: 11px;
+    height: 1px;
+
+    background: currentColor;
+
+    left: 1px;
+    top: 9px;
+
+    transform: rotate(-45deg);
+
+    transform-origin: left center;
+}
+
+.arrow-up-right::after {
+    content: "";
+
+    position: absolute;
+
+    width: 6px;
+    height: 6px;
+
+    border-top: 1px solid currentColor;
+    border-right: 1px solid currentColor;
+
+    right: 0;
+    top: 1px;
+}
+
+
+/* ================= AŞAĞI OK ================= */
+
+.arrow-down::before {
+    content: "";
+
+    position: absolute;
+
+    width: 1px;
+    height: 11px;
+
+    background: currentColor;
+
+    left: 6px;
+    top: 1px;
+}
+
+.arrow-down::after {
+    content: "";
+
+    position: absolute;
+
+    width: 6px;
+    height: 6px;
+
+    border-right: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+
+    left: 3px;
+    bottom: 0;
+
+    transform: rotate(45deg);
+}
+
+
+/* ================= YUKARI OK ================= */
+
+.arrow-up::before {
+    content: "";
+
+    position: absolute;
+
+    width: 1px;
+    height: 11px;
+
+    background: currentColor;
+
+    left: 6px;
+    top: 2px;
+}
+
+.arrow-up::after {
+    content: "";
+
+    position: absolute;
+
+    width: 6px;
+    height: 6px;
+
+    border-left: 1px solid currentColor;
+    border-top: 1px solid currentColor;
+
+    left: 3px;
+    top: 0;
+
+    transform: rotate(45deg);
+}
+
+
+/* ================= OK KONUMALARI ================= */
+
+.hero-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.underline-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+.service-arrow {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    color: #999;
+}
+
+.contact-card > .arrow {
+    position: absolute;
+
+    right: 0;
+
+    top: 28px;
+
+    color: #666;
+}
+
+.contact-card:hover > .arrow {
+    color: white;
+}
+
+.back-top {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
