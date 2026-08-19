@@ -68,35 +68,21 @@ a {
 /* LOGO */
 
 .logo-link {
-    width: 155px;
-
-    height: 46px;
-
     display: flex;
-
     align-items: center;
-
-    justify-content: flex-start;
-
-    overflow: hidden;
+    width: 155px;
+    height: 60px;
+    flex-shrink: 0;
 }
 
 .logo {
     display: block;
-
-    width: 155px;
-
-    height: 46px;
-
+    width: auto;
+    height: auto;
     max-width: 155px;
-
-    max-height: 46px;
-
+    max-height: 60px;
     object-fit: contain;
-
-    object-position: left center;
 }
-
 
 /* NAVIGATION */
 
