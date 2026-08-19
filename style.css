@@ -15,18 +15,23 @@ html {
 
 body {
     font-family: "DM Sans", Arial, sans-serif;
+
     background: #f5f4f1;
+
     color: #111;
+
     line-height: 1.6;
 }
 
 a {
     color: inherit;
+
     text-decoration: none;
 }
 
 .container {
     width: min(1160px, calc(100% - 48px));
+
     margin: auto;
 }
 
@@ -35,10 +40,13 @@ a {
 
 .header {
     height: 82px;
+
     background: #f5f4f1;
+
     border-bottom: 1px solid #deddd8;
 
     position: sticky;
+
     top: 0;
 
     z-index: 100;
@@ -48,18 +56,26 @@ a {
     height: 100%;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
     gap: 30px;
 }
 
+
+/* LOGO */
+
 .logo-link {
     width: 155px;
+
     height: 46px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: flex-start;
 
     overflow: hidden;
@@ -69,20 +85,28 @@ a {
     display: block;
 
     width: 155px;
+
     height: 46px;
 
     max-width: 155px;
+
     max-height: 46px;
 
     object-fit: contain;
+
     object-position: left center;
 }
 
+
+/* NAVIGATION */
+
 .navigation {
     display: flex;
+
     gap: 34px;
 
     font-size: 12px;
+
     font-weight: 600;
 
     color: #6c6b66;
@@ -96,25 +120,58 @@ a {
     color: #111;
 }
 
+
+/* HEADER WHATSAPP */
+
 .header-button {
     display: inline-flex;
+
     align-items: center;
 
-    gap: 12px;
+    justify-content: center;
+
+    gap: 10px;
 
     min-height: 44px;
 
     padding: 0 18px;
 
     background: #111;
+
     color: white;
 
     font-size: 11px;
+
     font-weight: 700;
+
+    transition: .25s;
 }
 
-.header-button span {
-    font-size: 16px;
+.header-button:hover {
+    background: #25D366;
+
+    color: #071b0d;
+}
+
+.header-button .whatsapp-icon {
+    width: 19px;
+
+    height: 19px;
+
+    object-fit: contain;
+}
+
+
+/* ================= WHATSAPP ICON ================= */
+
+.whatsapp-icon {
+    width: 21px;
+
+    height: 21px;
+
+    object-fit: contain;
+
+    display: block;
 }
 
 
@@ -138,17 +195,6 @@ a {
 
     overflow: hidden;
 }
-
-
-/*
-    İstersen daha sonra buraya hero görseli ekleyebiliriz.
-    Örneğin:
-
-    background-image:
-        linear-gradient(...),
-        url("hero.jpg");
-
-*/
 
 .hero-overlay {
     position: absolute;
@@ -243,6 +289,9 @@ a {
     margin-top: 38px;
 }
 
+
+/* ================= GENERAL BUTTON ================= */
+
 .button {
     display: inline-flex;
 
@@ -250,13 +299,13 @@ a {
 
     justify-content: center;
 
-    gap: 24px;
+    gap: 16px;
 
     min-height: 50px;
 
     padding: 0 22px;
 
-    border: 1px solid #111;
+    border: 1px solid transparent;
 
     font-size: 11px;
 
@@ -265,22 +314,33 @@ a {
     transition: .25s;
 }
 
-.button span {
-    font-size: 16px;
+
+/* ================= WHATSAPP BUTTON ================= */
+
+.whatsapp-button {
+    background: #25D366;
+
+    color: #071b0d;
+
+    border-color: #25D366;
 }
 
-.button-white {
-    background: white;
+.whatsapp-button:hover {
+    background: #20bd5b;
 
-    color: #111;
+    border-color: #20bd5b;
 
-    border-color: white;
+    transform: translateY(-2px);
 }
 
-.button-white:hover {
-    background: #d9d8d2;
-    border-color: #d9d8d2;
+.whatsapp-button .whatsapp-icon {
+    width: 21px;
+
+    height: 21px;
 }
+
+
+/* HERO LINK */
 
 .hero-link {
     font-size: 12px;
@@ -293,6 +353,9 @@ a {
 .hero-link span {
     margin-left: 12px;
 }
+
+
+/* HERO NUMBER */
 
 .hero-number {
     align-self: flex-end;
@@ -516,18 +579,11 @@ a {
     display: block;
 }
 
-.button-dark {
+
+/* CTA WHATSAPP */
+
+.cta-whatsapp {
     margin-top: 35px;
-
-    background: #111;
-
-    color: white;
-
-    border-color: #111;
-}
-
-.button-dark:hover {
-    background: #333;
 }
 
 
@@ -673,7 +729,7 @@ footer {
 }
 
 
-/* ================= WHATSAPP ================= */
+/* ================= FLOATING WHATSAPP ================= */
 
 .whatsapp {
     position: fixed;
@@ -684,9 +740,9 @@ footer {
 
     z-index: 200;
 
-    width: 56px;
+    width: 58px;
 
-    height: 56px;
+    height: 58px;
 
     display: flex;
 
@@ -696,25 +752,33 @@ footer {
 
     border-radius: 50%;
 
-    background: #111;
+    background: #25D366;
 
-    color: white;
+    border: none;
 
-    border: 1px solid #444;
-
-    box-shadow: 0 10px 35px rgba(0,0,0,.18);
-
-    font-size: 11px;
-
-    font-weight: 800;
+    box-shadow:
+        0 8px 25px rgba(37, 211, 102, .35);
 
     transition: .25s;
 }
 
-.whatsapp:hover {
-    transform: translateY(-4px);
+.whatsapp img {
+    width: 32px;
 
-    background: #222;
+    height: 32px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+.whatsapp:hover {
+    transform: translateY(-4px) scale(1.04);
+
+    background: #20bd5b;
+
+    box-shadow:
+        0 12px 30px rgba(37, 211, 102, .45);
 }
 
 
@@ -730,10 +794,20 @@ footer {
         height: 70px;
     }
 
+    .logo-link {
+        width: 125px;
+
+        height: 38px;
+    }
+
     .logo {
+        width: 125px;
+
         height: 38px;
 
-        max-width: 155px;
+        max-width: 125px;
+
+        max-height: 38px;
     }
 
     .navigation {
@@ -744,6 +818,12 @@ footer {
         min-height: 40px;
 
         padding: 0 13px;
+    }
+
+    .header-button .whatsapp-icon {
+        width: 18px;
+
+        height: 18px;
     }
 
 
@@ -874,6 +954,25 @@ footer {
 
     .footer-inner {
         flex-wrap: wrap;
+    }
+
+
+    /* FLOATING WHATSAPP */
+
+    .whatsapp {
+        width: 54px;
+
+        height: 54px;
+
+        right: 16px;
+
+        bottom: 16px;
+    }
+
+    .whatsapp img {
+        width: 30px;
+
+        height: 30px;
     }
 
 }
