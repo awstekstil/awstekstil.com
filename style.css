@@ -55,17 +55,27 @@ a {
 }
 
 .logo-link {
+    width: 155px;
+    height: 46px;
+
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+
+    overflow: hidden;
 }
 
 .logo {
-    height: 46px;
-    width: auto;
+    display: block;
 
-    max-width: 190px;
+    width: 155px;
+    height: 46px;
+
+    max-width: 155px;
+    max-height: 46px;
 
     object-fit: contain;
+    object-position: left center;
 }
 
 .navigation {
