@@ -743,53 +743,6 @@ footer {
     color: white;
 }
 
-/* ================= FLOATING INSTAGRAM ================= */
-
-.instagram {
-    position: fixed;
-
-    right: 22px;
-    bottom: 108px;
-
-    z-index: 200;
-
-    width: 58px;
-    height: 58px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 50%;
-
-    background: #E1306C;
-
-    border: none;
-
-    box-shadow:
-        0 8px 25px rgba(225, 48, 108, .30);
-
-    transition: .25s;
-}
-
-.instagram img {
-    width: 32px;
-    height: 32px;
-
-    object-fit: contain;
-
-    display: block;
-}
-
-.instagram:hover {
-    transform: translateY(-4px) scale(1.04);
-
-    background: #C13584;
-
-    box-shadow:
-        0 12px 30px rgba(225, 48, 108, .40);
-}
 
 /* ================= FLOATING WHATSAPP ================= */
 
@@ -1050,21 +1003,7 @@ footer {
         flex-wrap: wrap;
     }
 
-/* ================= FLOATING INSTAGRAM ================= */
 
-.instagram {
-    width: 54px;
-    height: 54px;
-
-    right: 16px;
-    bottom: 80px;
-}
-
-.instagram img {
-    width: 30px;
-    height: 30px;
-}
-    
     /* ================= FLOATING WHATSAPP ================= */
 
     .whatsapp {
