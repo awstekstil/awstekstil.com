@@ -979,3 +979,33 @@ footer {
     }
 
 }
+
+/* ================= MOBİL OKLAR ================= */
+
+@media (max-width: 800px) {
+
+    .hero-link .arrow-down {
+        font-size: 14px;
+    }
+
+    .hero-link .arrow-down::before,
+    .hero-link .arrow-down::after {
+        display: none;
+    }
+
+    .hero-link .arrow-down {
+        width: auto;
+        height: auto;
+    }
+
+    .hero-link .arrow-down::after {
+        content: "↓";
+        display: inline;
+        border: none;
+        position: static;
+        transform: none;
+        font-size: 16px;
+        line-height: 1;
+    }
+
+}
