@@ -51,6 +51,8 @@ a {
     justify-content: space-between;
 
     gap: 30px;
+
+    position: relative;
 }
 
 
@@ -76,6 +78,33 @@ a {
     max-height: 45px;
 
     object-fit: contain;
+}
+
+
+/* ================= HEADER ORTA BAŞLIK ================= */
+
+.header-brand {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 15px;
+    font-weight: 800;
+
+    letter-spacing: .12em;
+
+    color: #111;
+
+    white-space: nowrap;
+
+    line-height: 1;
+
+    pointer-events: none;
 }
 
 
@@ -796,6 +825,18 @@ footer {
         max-width: 78px;
         max-height: 36px;
     }
+
+
+    /* ================= MOBILE HEADER BRAND ================= */
+
+    .header-brand {
+        font-size: 9px;
+
+        font-weight: 800;
+
+        letter-spacing: .055em;
+    }
+
 
     .navigation {
         display: none;
