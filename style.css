@@ -51,8 +51,6 @@ a {
     justify-content: space-between;
 
     gap: 30px;
-
-    position: relative;
 }
 
 
@@ -78,33 +76,6 @@ a {
     max-height: 45px;
 
     object-fit: contain;
-}
-
-
-/* ================= HEADER ORTA BAŞLIK ================= */
-
-.header-brand {
-    position: absolute;
-
-    left: 50%;
-    top: 50%;
-
-    transform: translate(-50%, -50%);
-
-    font-family: "Manrope", sans-serif;
-
-    font-size: 15px;
-    font-weight: 800;
-
-    letter-spacing: .12em;
-
-    color: #111;
-
-    white-space: nowrap;
-
-    line-height: 1;
-
-    pointer-events: none;
 }
 
 
@@ -255,6 +226,8 @@ a {
     letter-spacing: -.075em;
 
     margin-bottom: 36px;
+
+    font-weight: 800;
 }
 
 .hero h1 em {
@@ -263,6 +236,8 @@ a {
     color: #d7d6d1;
 
     font-style: normal;
+
+    font-weight: 800;
 }
 
 .hero-content > p {
@@ -414,6 +389,8 @@ a {
     line-height: 1;
 
     letter-spacing: -.065em;
+
+    font-weight: 800;
 }
 
 .intro-content h2 strong {
@@ -482,10 +459,14 @@ a {
     line-height: 1;
 
     letter-spacing: -.065em;
+
+    font-weight: 800;
 }
 
 .services-header strong {
     display: block;
+
+    font-weight: 800;
 }
 
 .service-list {
@@ -526,6 +507,8 @@ a {
     font-size: 25px;
 
     letter-spacing: -.04em;
+
+    font-weight: 800;
 }
 
 .service-info p {
@@ -576,10 +559,14 @@ a {
     line-height: 1;
 
     letter-spacing: -.065em;
+
+    font-weight: 800;
 }
 
 .cta h2 strong {
     display: block;
+
+    font-weight: 800;
 }
 
 .cta-whatsapp {
@@ -615,6 +602,8 @@ a {
     line-height: .9;
 
     letter-spacing: -.075em;
+
+    font-weight: 800;
 }
 
 .contact-header p {
@@ -826,18 +815,6 @@ footer {
         max-height: 36px;
     }
 
-
-    /* ================= MOBILE HEADER BRAND ================= */
-
-    .header-brand {
-        font-size: 9px;
-
-        font-weight: 800;
-
-        letter-spacing: .055em;
-    }
-
-
     .navigation {
         display: none;
     }
@@ -873,6 +850,14 @@ footer {
 
     .hero h1 {
         font-size: clamp(52px, 15vw, 80px);
+
+        font-weight: 800;
+
+        letter-spacing: -.06em;
+    }
+
+    .hero h1 em {
+        font-weight: 800;
     }
 
     .hero-buttons {
@@ -902,6 +887,10 @@ footer {
 
     .intro-content h2 {
         font-size: 45px;
+
+        font-weight: 800;
+
+        letter-spacing: -.055em;
     }
 
 
@@ -921,6 +910,10 @@ footer {
 
     .services-header h2 {
         font-size: 45px;
+
+        font-weight: 800;
+
+        letter-spacing: -.055em;
     }
 
     .service-item {
@@ -937,6 +930,8 @@ footer {
 
     .service-info h3 {
         font-size: 21px;
+
+        font-weight: 800;
     }
 
     .service-info p {
@@ -962,6 +957,10 @@ footer {
 
     .cta h2 {
         font-size: 45px;
+
+        font-weight: 800;
+
+        letter-spacing: -.055em;
     }
 
 
@@ -981,6 +980,10 @@ footer {
 
     .contact-header h2 {
         font-size: 65px;
+
+        font-weight: 800;
+
+        letter-spacing: -.06em;
     }
 
     .contact-grid {
