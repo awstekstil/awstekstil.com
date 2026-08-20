@@ -50,8 +50,6 @@ a {
     align-items: center;
     justify-content: space-between;
 
-    position: relative;
-
     gap: 30px;
 }
 
@@ -78,33 +76,6 @@ a {
     max-height: 45px;
 
     object-fit: contain;
-}
-
-
-/* ================= HEADER ORTA MARKA ================= */
-
-.header-brand {
-    position: absolute;
-
-    left: 50%;
-    top: 50%;
-
-    transform: translate(-50%, -50%);
-
-    font-family: Manrope, sans-serif;
-
-    font-size: 15px;
-    font-weight: 800;
-
-    letter-spacing: .12em;
-
-    color: #111;
-
-    white-space: nowrap;
-
-    line-height: 1;
-
-    pointer-events: none;
 }
 
 
@@ -824,15 +795,6 @@ footer {
     .logo {
         max-width: 78px;
         max-height: 36px;
-    }
-
-    .header-brand {
-        left: 50%;
-
-        font-size: 9px;
-        font-weight: 800;
-
-        letter-spacing: .055em;
     }
 
     .navigation {
