@@ -50,6 +50,8 @@ a {
     align-items: center;
     justify-content: space-between;
 
+    position: relative;
+
     gap: 30px;
 }
 
@@ -60,9 +62,7 @@ a {
     display: flex;
     align-items: center;
 
-    gap: 12px;
-
-    width: auto;
+    width: 105px;
     height: 52px;
 
     flex-shrink: 0;
@@ -80,17 +80,31 @@ a {
     object-fit: contain;
 }
 
-.brand-name {
+
+/* ================= HEADER ORTA MARKA ================= */
+
+.header-brand {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
     font-family: Manrope, sans-serif;
 
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 800;
 
-    letter-spacing: .07em;
+    letter-spacing: .12em;
 
     color: #111;
 
     white-space: nowrap;
+
+    line-height: 1;
+
+    pointer-events: none;
 }
 
 
@@ -105,6 +119,9 @@ a {
     font-weight: 600;
 
     color: #6c6b66;
+
+    margin-left: auto;
+    margin-right: 10px;
 }
 
 .navigation a {
@@ -137,6 +154,8 @@ a {
     font-weight: 700;
 
     transition: .25s;
+
+    flex-shrink: 0;
 }
 
 .header-button:hover {
@@ -144,11 +163,15 @@ a {
     color: #071b0d;
 }
 
+
+/* ================= WHATSAPP ICON ================= */
+
 .whatsapp-icon {
     width: 21px;
     height: 21px;
 
     object-fit: contain;
+
     display: block;
 }
 
@@ -308,6 +331,7 @@ a {
 
 .hero-link {
     display: inline-flex;
+
     align-items: center;
 
     gap: 10px;
@@ -778,27 +802,37 @@ footer {
     }
 
 
-    /* HEADER */
+    /* ================= MOBILE HEADER ================= */
 
     .header {
         height: 70px;
     }
 
-    .logo-link {
-        gap: 8px;
+    .header-inner {
+        gap: 0;
 
+        padding: 0;
+    }
+
+    .logo-link {
+        width: 78px;
         height: 48px;
+
+        flex-shrink: 0;
     }
 
     .logo {
-        max-width: 82px;
-        max-height: 38px;
+        max-width: 78px;
+        max-height: 36px;
     }
 
-    .brand-name {
-        font-size: 10px;
+    .header-brand {
+        left: 50%;
 
-        letter-spacing: .05em;
+        font-size: 9px;
+        font-weight: 800;
+
+        letter-spacing: .055em;
     }
 
     .navigation {
@@ -808,18 +842,22 @@ footer {
     .header-button {
         min-height: 40px;
 
-        padding: 0 12px;
+        padding: 0 10px;
 
         gap: 7px;
+
+        font-size: 10px;
+
+        flex-shrink: 0;
     }
 
     .header-button .whatsapp-icon {
-        width: 18px;
-        height: 18px;
+        width: 17px;
+        height: 17px;
     }
 
 
-    /* HERO */
+    /* ================= HERO ================= */
 
     .hero,
     .hero-container {
@@ -847,7 +885,7 @@ footer {
     }
 
 
-    /* INTRO */
+    /* ================= INTRO ================= */
 
     .intro {
         padding: 80px 0;
@@ -864,7 +902,7 @@ footer {
     }
 
 
-    /* SERVICES */
+    /* ================= SERVICES ================= */
 
     .services {
         padding: 80px 0;
@@ -907,7 +945,7 @@ footer {
     }
 
 
-    /* CTA */
+    /* ================= CTA ================= */
 
     .cta {
         padding: 80px 0;
@@ -924,7 +962,7 @@ footer {
     }
 
 
-    /* CONTACT */
+    /* ================= CONTACT ================= */
 
     .contact {
         padding: 80px 0;
@@ -956,14 +994,14 @@ footer {
     }
 
 
-    /* FOOTER */
+    /* ================= FOOTER ================= */
 
     .footer-inner {
         flex-wrap: wrap;
     }
 
 
-    /* FLOATING WHATSAPP */
+    /* ================= FLOATING WHATSAPP ================= */
 
     .whatsapp {
         width: 54px;
