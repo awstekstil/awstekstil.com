@@ -1234,7 +1234,7 @@ footer {
 @media screen and (max-width: 800px) {
 
     body .aws-ticker .aws-ticker-content span {
-        font-size: 10px !important;
+        font-size: 12px !important;
     }
 
 }
