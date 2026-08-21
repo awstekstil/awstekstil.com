@@ -1020,3 +1020,79 @@ footer {
     }
 
 }
+
+/* ================= KAYAN YAZI ================= */
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    background: #111;
+    color: #f5f4f1;
+    border-bottom: 1px solid #292929;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    position: relative;
+    z-index: 90;
+}
+
+.marquee-track {
+    display: inline-flex;
+    align-items: center;
+    gap: 22px;
+    width: max-content;
+    animation: marquee-scroll 24s linear infinite;
+}
+
+.marquee-track span {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+}
+
+.marquee-track b {
+    font-size: 13px;
+    font-weight: 400;
+    color: #777;
+}
+
+@keyframes marquee-scroll {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-33.333%);
+    }
+
+}
+
+.marquee:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+
+@media (max-width: 800px) {
+
+    .marquee {
+        height: 38px;
+    }
+
+    .marquee-track {
+        gap: 16px;
+        animation-duration: 20s;
+    }
+
+    .marquee-track span {
+        font-size: 9px;
+        letter-spacing: .12em;
+    }
+
+    .marquee-track b {
+        font-size: 11px;
+    }
+
+}
