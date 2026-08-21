@@ -1202,3 +1202,31 @@ footer {
     }
 
 }
+
+/* ================================================= */
+/* AWS KAYAN YAZI - MOBİL KIRMIZI */
+/* ================================================= */
+
+@media screen and (max-width: 800px) {
+
+    body .aws-ticker {
+        background-color: #c40000 !important;
+        background: #c40000 !important;
+
+        width: 100% !important;
+        height: 40px !important;
+        min-height: 40px !important;
+
+        display: flex !important;
+
+        overflow: hidden !important;
+
+        border-top: 1px solid #a80000 !important;
+        border-bottom: 1px solid #a80000 !important;
+    }
+
+    body .aws-ticker .aws-ticker-track {
+        height: 40px !important;
+    }
+
+}
