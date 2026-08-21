@@ -1031,11 +1031,11 @@ footer {
 
     overflow: hidden;
 
-    background: #111111 !important;
+    background: #c40000 !important;
     color: #f5f4f1 !important;
 
-    border-top: 1px solid #292929;
-    border-bottom: 1px solid #292929;
+    border-top: 1px solid #a80000;
+    border-bottom: 1px solid #a80000;
 
     display: flex;
     align-items: center;
@@ -1075,7 +1075,7 @@ footer {
     padding-left: 24px;
     padding-right: 24px;
 
-    color: #f5f4f1 !important;
+    color: #ffffff !important;
 
     font-family: "DM Sans", Arial, sans-serif;
 
@@ -1092,7 +1092,7 @@ footer {
 .aws-ticker-content i {
     display: block;
 
-    color: #777777 !important;
+    color: #f1b3b3 !important;
 
     font-size: 14px;
     font-style: normal;
@@ -1138,12 +1138,12 @@ footer {
 
         overflow: hidden !important;
 
-        background: #111111 !important;
+        background: #c40000 !important;
 
-        color: #f5f4f1 !important;
+        color: #ffffff !important;
 
-        border-top: 1px solid #292929;
-        border-bottom: 1px solid #292929;
+        border-top: 1px solid #a80000;
+        border-bottom: 1px solid #a80000;
     }
 
     .aws-ticker-track {
@@ -1179,7 +1179,7 @@ footer {
         padding-left: 18px !important;
         padding-right: 18px !important;
 
-        color: #f5f4f1 !important;
+        color: #ffffff !important;
 
         font-size: 9px !important;
 
@@ -1194,7 +1194,7 @@ footer {
 
         display: block !important;
 
-        color: #777777 !important;
+        color: #f1b3b3 !important;
 
         font-size: 12px !important;
 
