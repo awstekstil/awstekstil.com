@@ -1360,3 +1360,26 @@ footer {
     }
 
 }
+
+
+/* ================= INTRO -> ÜRÜNLER BOŞLUK AYARI ================= */
+
+.intro {
+    padding-bottom: 40px;
+}
+
+.products {
+    padding-top: 60px;
+}
+
+@media (max-width: 800px) {
+
+    .intro {
+        padding-bottom: 30px;
+    }
+
+    .products {
+        padding-top: 50px;
+    }
+
+}
